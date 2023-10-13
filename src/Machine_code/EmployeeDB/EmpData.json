@@ -1,0 +1,23 @@
+[
+{
+   "id":1,
+   "name":"Ram",
+   "DOB":"12/3/2000",
+   "Address":"Bangalore"
+
+},
+{
+    "id":2,
+    "name":"Vinit",
+    "DOB":"12/3/2000",
+    "Address":"Bangalore"
+ 
+ },
+ {
+    "id":3,
+    "name":"Arun",
+    "DOB":"12/3/2000",
+    "Address":"Bangalore"
+ 
+ }
+]

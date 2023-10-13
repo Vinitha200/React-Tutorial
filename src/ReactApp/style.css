@@ -1,0 +1,32 @@
+
+.main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.child{
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    background-color:white;
+}
+.child-tile1{
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    background-color: red;
+}
+
+.child-tile2{
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    background-color: red;
+}
+
+.child-tile3{
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    background-color: red;
+}
