@@ -8,18 +8,14 @@ import DisplayFolder from "./JsonData/Display"
 import Employee from './Machine_code/EmployeeDB';
 import HookEx from './hookEx';
 import ReactApp from './ReactApp';
+import MainPage from './ParticeProject';
 
 function App() {
   console.log("exploredata1",exploredata)
   return (
     <div className="App">
-     {/* <Crud></Crud> */}
-    {/* <Parent></Parent>  */}
-    {/* <DisplayFolder exploredata={exploredata}></DisplayFolder> */}
-{/* <Index></Index> */}
-{/* <Employee/> */}
-<HookEx/>
-{/* <ReactApp/> */}
+      <MainPage/>
+
     </div>
   );
 }

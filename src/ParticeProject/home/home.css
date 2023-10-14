@@ -1,0 +1,15 @@
+.post-main{
+    border: 1px solid black;
+    margin: 18px;
+    border-radius: 5px;
+}
+
+.post-title{
+    background-color: rgb(234 215 193);
+    padding: 10px;
+}
+
+.post-body{
+    background: rgb(220, 184, 140);
+    padding: 10px;
+}
