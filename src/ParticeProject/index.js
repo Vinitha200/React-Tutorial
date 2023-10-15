@@ -5,6 +5,7 @@ import { BrowserRouter,Routes,Route } from 'react-router-dom'
 import Home from './home/Home'
 import CreatePost from './CreatePost/CreatePost'
 import PostDetail from './postDetail/PostDetail'
+import EditPost from './editpost/EditPost'
 
 export default function MainPage() {
   return (
@@ -15,6 +16,7 @@ export default function MainPage() {
         <Route path="/" element={<Home/>}/>
         <Route path="/createpost" element={<CreatePost/>}/>
         <Route path="/postdetail/:id" element={<PostDetail/>}/>
+        <Route path="/postdetail/editpage/:id" element={<EditPost/>}/>
        </Routes>
     </BrowserRouter>
     </div>
