@@ -10,6 +10,7 @@ function EditPost() {
     const [newTitle, setNewTitle] = useState("")
     const [newContent, setNewContent] = useState("")
 
+    
     const HandleEdit = (e) => {
         e.preventDefault();
         const response = fetch('https://jsonplaceholder.typicode.com/posts/1', {
