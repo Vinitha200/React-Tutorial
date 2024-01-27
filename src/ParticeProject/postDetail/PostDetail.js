@@ -15,7 +15,7 @@ function PostDetail() {
   }
 
   const HandleDelete = () => {
-    var result = confirm("Want to delete?");
+    var result = window.confirm("Want to delete?");
     if (result) {
       fetch('https://jsonplaceholder.typicode.com/posts/1', {
         method: 'DELETE',
