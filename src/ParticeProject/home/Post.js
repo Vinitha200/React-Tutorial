@@ -20,7 +20,7 @@ function Post({post}) {
   return (
     <>
       <div className='post-title'>
-         <div className="post-div" onClick={HandleClick}>{post?.title}</div>
+         <div className="post-div" onClick={HandleClick}>{post?.id}. {post?.title}</div>
          {/* <Button onClick={HandleAccordian}>click</Button> */}
          <CaretRightOutlined onClick={HandleAccordian} rotate={accordian?90:-90}/>
       </div>
