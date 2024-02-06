@@ -28,14 +28,14 @@ function CreatePost() {
     
     if(response){
       alert("Data Saved ")
-      navigation("/")
+      navigation("/React-Tutorial")
     }
   }
 
   return (
     <>
     <div style={{display:"flex"}}>
-      <BackButon url={"/"}/>
+      <BackButon url={"/React-Tutorial"}/>
       <span className='create-span'>Create Post</span>
     </div>
     

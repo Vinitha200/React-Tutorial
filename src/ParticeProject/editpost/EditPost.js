@@ -29,7 +29,7 @@ function EditPost() {
             .then((json) => console.log(json));
         if (response) {
             alert("Data Updated")
-            navigation("/")
+            navigation("/React-Tutorial")
         }
     }
 
