@@ -16,7 +16,7 @@ export default function MainPage() {
     <BrowserRouter>
        <Header/>
        <Routes>
-        <Route path="/React-Tutorial" element={<Home/>}/>
+        <Route path="/" element={<Home/>}/>
         <Route path="/createpost" element={<CreatePost/>}/>
         <Route path="/postdetail/:id" element={<PostDetail/>}/>
         <Route path="/postdetail/editpage/:id" element={<EditPost/>}/>

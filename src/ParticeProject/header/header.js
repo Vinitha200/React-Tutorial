@@ -9,7 +9,7 @@ function Header() {
           <div className='cointainer'>
              <h1 style={{margin:"0px"}}>Blogs</h1>
              <nav className='cointainer-nav'>
-               <Link to="/React-Tutorial"><span className='navspan'>Home</span></Link> 
+               <Link to="/"><span className='navspan'>Home</span></Link> 
                <Link to="/createpost"><span className='navspan'>CreatePost</span></Link>
                {/* <Link to="/interview"><span className='navspan'>Interview Q&A</span></Link>  */}
              </nav>

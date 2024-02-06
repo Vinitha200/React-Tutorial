@@ -21,14 +21,14 @@ function PostDetail() {
         method: 'DELETE',
       });
       alert("Post deleted successfully!");
-      navigation("/React-Tutorial")
+      navigation("/")
     }
   }
   console.log("state", state)
 
   return (
     <>
-     <div style={{display:"flex"}}><BackButon url={"/React-Tutorial"}/></div> 
+     <div style={{display:"flex"}}><BackButon url={"/"}/></div> 
       <div className='postdetail-container'>
         <h2 className='state-title'>{state?.title}</h2>
         <div className='state-body'>{state?.body}</div>
