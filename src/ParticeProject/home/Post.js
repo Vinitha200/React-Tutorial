@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Button } from 'antd'
+import {CaretRightOutlined} from "@ant-design/icons"
 import "./home.css"
 
 
@@ -19,8 +20,9 @@ function Post({post}) {
   return (
     <>
       <div className='post-title'>
-         <div onClick={HandleClick}>{post?.title}</div>
-         <Button onClick={HandleAccordian}>click</Button>
+         <div className="post-div" onClick={HandleClick}>{post?.title}</div>
+         {/* <Button onClick={HandleAccordian}>click</Button> */}
+         <CaretRightOutlined onClick={HandleAccordian} rotate={accordian?90:-90}/>
       </div>
       <div>
         {accordian && <div className='post-body'>{post?.body}</div>}

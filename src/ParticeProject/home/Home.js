@@ -2,12 +2,14 @@ import React, { useEffect, useState } from 'react'
 import Post from './Post'
 import useFetch from '../hook/customFetchHook'
 import { Input } from 'antd'
+import { SortAscendingOutlined,SortDescendingOutlined } from '@ant-design/icons'
 
 function Home() {
   const { data: postData, error, isLoading } = useFetch("https://jsonplaceholder.typicode.com/posts")
 
 
   const [filter, setFilter] = useState([])
+  const [sort, setSort] = useState([])
 
   const handleSearch = (e) => {
     const searchTerm = e?.target?.value?.trim()
@@ -35,31 +37,46 @@ function Home() {
 
   }
 
-  //console.log("filterData",filter,searchValue)
+  const HandleSortdesc = () => {
+    const sortData = [...postData].sort((a, b) => b["title"].localeCompare(a["title"]))
+    console.log("filterData1", sortData)
+    setSort(sortData)
+  }
+
+  const HandleSortasc = () => {
+    const sortData = [...postData].sort((a, b) => a["title"].localeCompare(b["title"]))
+    console.log("filterData1", sortData)
+    setSort(sortData)
+  }
+
+  console.log("filterData", sort)
   return (
     <>
       {isLoading && <h3>Loading</h3>}
-      <div>
-        <Input
-          placeholder='search here'
-          onChange={(e) => handleSearch(e)}
-          enter
-          style={{width:"30%"}}
-        />
-      </div>
-      <div>
-        {filter.length > 0 ? (filter.map((item) => {
-          return (
-            <Post post={item} key={item?.id}></Post>
-          )
-        })) : (postData.map((item) => {
-          return (
-            <Post post={item} key={item?.id}></Post>
-          )
-        }))
+      <div style={{ display: "flex", flexDirection: "column" }}>
+        <div className='search-div'>
+          <Input
+            placeholder='search here'
+            onChange={(e) => handleSearch(e)}
+            enter
+            style={{ width: "30%" }}
+          />
+          <div>
+         
+          <button className ="sort" onClick={() => HandleSortasc()}>  <SortAscendingOutlined/> </button>
+            <button className ="sort" onClick={() => HandleSortdesc()}>  <SortDescendingOutlined/> </button>
+          </div>
 
-        }
+        </div>
+
+
+        <div>
+          {(filter.length > 0 ? filter : (sort.length > 0 ? sort : postData)).map((item) => (
+            <Post post={item} key={item?.id}></Post>
+          ))}
+        </div>
       </div>
+
     </>
 
   )
