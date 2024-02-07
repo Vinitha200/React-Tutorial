@@ -14,8 +14,9 @@ function App() {
   console.log("exploredata1",exploredata)
   return (
     <div className="App">
+        <HookEx/>
       <MainPage/>
-
+    
     </div>
   );
 }
