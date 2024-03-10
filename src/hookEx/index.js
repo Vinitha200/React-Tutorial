@@ -4,6 +4,7 @@ import EffectEx from "./useEffect";
 import RefEx from "./useRef";
 import ReactMemo from "./ReactMemo";
 import CallBack from "./useCallBack";
+import Parent from "./useContext/parent";
 
 function HookEx (){
     return(
@@ -13,6 +14,7 @@ function HookEx (){
         <RefEx/>
         <ReactMemo/>
         <CallBack/>
+        <Parent />
         </>
     )
 }
