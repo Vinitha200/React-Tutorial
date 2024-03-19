@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react"
+import Parent from "./parent"
 
 const EffectEx =()=>{
    
@@ -12,12 +13,12 @@ const EffectEx =()=>{
       }
 
 
-    useEffect(()=>{
-        API_CALL()
-    },[])
+    // useEffect(()=>{
+    //     API_CALL()
+    // },[])
     return(
         <>
-        <div>
+        {/* <div>
              {fetchData.map((item)=>{
             return <div key={item.id} style={{    
                 height: "200px",
@@ -29,8 +30,8 @@ const EffectEx =()=>{
                 </div>
             </div>
         })}
-        </div>
-       
+        </div> */}
+       <Parent/>
         </>
     )
 }

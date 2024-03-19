@@ -24,7 +24,7 @@ const MemoEx =()=>{
         <div>
             <button onClick={increment1}>count{count1}</button><br/>
             <button onClick={increment2}>count{count2}</button><br/>
-            <span>{MemorizedValue}</span>
+            <span>Multiple : {MemorizedValue}</span>
         </div>
         </>
     )

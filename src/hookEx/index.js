@@ -11,10 +11,10 @@ function HookEx (){
         <>
         {/* <MemoEx/> */}
         <EffectEx/>
-        <RefEx/>
+        {/* <RefEx/>
         <ReactMemo/>
         <CallBack/>
-        <Parent />
+        <Parent /> */}
         </>
     )
 }
